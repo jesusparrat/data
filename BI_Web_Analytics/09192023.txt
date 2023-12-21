@@ -1,0 +1,28 @@
+google analytics
+
+qué mide: quién, qué y por qué. esto genera un insight/conclusion - clave para accionar el
+negocio: el por qué el usuario hace lo que hace
+
+SEO: conjunto de acciones para salir primero en las búsquedas
+
+obtener datos -> analizar lo que sucede con los datos -> alcanzar las 
+conclusiones / insights -> actuar / tomar decisiones
+
+
+modo vista previa: testear los eventos con google analytics
+
+ej1: 
+A) labar-beria.company.site
+B)
+1	Referral
+2	Organic Social
+3	Organic Search
+C) support.google.com / referral
+
+ej2: 
+A) Home
+B) Men's / Unisex | Apparel | Google Merchandise Store
+C) 19.86
+
+
+

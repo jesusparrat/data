@@ -1,0 +1,37 @@
+el KPI es un evento que es importante para la empresa
+
+
+DIMENSIÓN: es un sistema de clasificación de datos. 
+la dimensión es la agrupación de una métrica. ej: búsquedas a través de google.com
+
+
+3 DIMENSIONES PRINCIPALES: MEDIO - CÓMO; FUENTE - DE QUIÉN; CAMPAÑA - POR QUÉ
+
+Medios comunes: directo, organico, referral, cpc (patrocinados)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

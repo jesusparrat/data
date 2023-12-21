@@ -1,0 +1,61 @@
+el KPI es un evento que es importante para la empresa
+
+
+DIMENSIÓN: es un sistema de clasificación de datos. 
+la dimensión es la agrupación de una métrica. ej: búsquedas a través de google.com
+
+
+3 DIMENSIONES PRINCIPALES: MEDIO - CÓMO; FUENTE - DE QUIÉN; CAMPAÑA - POR QUÉ
+
+Medios comunes: directo, organico, referral, cpc (patrocinados)
+
+
+atribuir valor: seleccionar dónde van los valores de diferentes métricas
+
+
+MODELOS DE ATRIBUCIÓN: 
+ - En reglas: se eligen 
+	-- Último click multicanal
+	-- Primer click multicanal
+	-- Click lineal multicanal: se divide entre todas las campañas
+	-- Preferencia la último clic de Google Ads
+ - En datos: es el predeterminado de google
+
+NECESIDADES: SEO, SEM, GOOGLE SHOPPING
+
+
+EMBUDOS DE VENTA: TOFU > MOFU > BOFU
+Son para obtener leads
+
+
+
+SEO: ATRAER, CONVERTIR Y FIDELIZAR USUARIOS 
+SEO: posicionamiento en buscadores: mejorar visibilidad, reputación y obtener trafico web
+cualificado. 
+
+
+Acciones SEO fuera de tu pagina: 
+- linkbuilding: generar una red de enlaces externos a tu página
+- linkbaiting: generar artículos ""virales"" para generar que otras páginas te usen de referencia 
+
+
+tipos de anuncio: visibilidad, interacción, compra
+
+Fase del embudo: conversion y venta/leads: BOFU
+
+¿4 elementos para optimizar embudo email marketing? calidad BBDD, asunto, llamadas a la acci
+on - botones y optimización web
+
+calidad de segmentación viene determinada por el nivel de ventas
+
+
+
+
+
+
+
+
+
+
+
+

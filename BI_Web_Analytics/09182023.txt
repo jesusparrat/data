@@ -1,0 +1,53 @@
+la analítica digital: recopìla, trata e interpreta datos
+
+
+Analítica descriptiva
+Analítica predictiva
+Analítica prescriptiva
+
+
+
+Conocer a tu público: saber a quién le vendemos
+Para qué sirve la analítica digital: entender, optimizar y actuar. 
+
+Proyecto: hay que ser rápidos y ágiles, no hay que complicarse mucho
+3 Fases: qué puede necesitar una persona y que no exista; coger algo ya existente y 
+darle una vuelta a la idea; coger algo que nos guste y cómo monetizarlo
+Canales para llegar a los clientes
+Definir al cliente ideal 
+
+
+MEDICION: 
+1º auditoría, 2º estrategia, 3º implementacion, 4º medición, 5º optimizacion
+
+
+DAFOS Y BENCHMARKING: para sacar ventaja competitiva
+DAFOS: internos: debilidades y fortalezas; externos: oportunidades y amenazas
+
+Benchmark: compararnos con la competencia - según dónde mido y según cómo lo hago
+
+
+OBJETIVOS: 
+Cuantitativos-Cualitativos: ni siempre cuali, ni siempre cuanti
+SMART: eSpecíficos, Medibles, Alcanzables, Realistas, Temporales
+
+de negocios: objetivos generales. hacen referencia a la compañía en general
+de marketing: crecimiento de marca
+e-commerce: todo lo relacionado con crecimiento de página web
+
+
+
+KPIs
+Métrica: valores numéricos que sirven para analizar el rendimiento de una determinada 
+acción o proceso dentro de un negocio. "Si se puede medir, se puede mejorar".
+ROI = [(ING - INV)/INV] * 100
+
+LOS KPIs (Indicador Clave de Rendimiento) SON UNA MÉTRICA QUE MIDE OBJETIVOS, PERO NO 
+TODAS MÉTRICAS SON KPIs
+
+
+Métrica mide un proceso, KPI mide objetivos
+
+
+
+
