@@ -1,0 +1,25 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+				Spark
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+GRAFOS - se tienen elementos relacionados entre sí, con los elementos teniendo unos datos concretos definidos y se tienen las relaciones entre los elementos con más datos que reflejan la relación entre los elementos - es una nueva forma de representar la realidad que nos permite tener más datos en respecto a la relación entre los datos
+
+collect(): obtenemos una lista con los valores de los elementos separados por comas
+
+¿Qué sucede? es por el proceso interno / lo que pasa por "debajo" - se recuperan las distintas particiones del rdd de aquellos nodos que llevan al nodo drive
+
+transformación: método drop y dropna
+
+count() - devuelve el número de elementos del RDD
+
+reduce(func) - agrega los elementos del RDD usando una función, normalmente lambda
+
+take(n) - devuelve una lista con los primeros n elementos del RDD
+
+collect() - devuelve una lista con todos los elementos del RDD
+
+takeOrdered(n[,key=func]) - devuelve n elementos en orden ascendente. Opcionalmente se puede especificar la clave de ordenación
+
+un job se descompone en stash y estos en varias tasks
+
+
