@@ -1,0 +1,9 @@
+{
+"capital": [{"Sevilla", "Barcelona"}], 
+"poblacion": [{8500187,  7792611}], 
+"ptj_poblacion": [{17.87, 16.38}], 
+"densidad": [{97.05, 238.84}],
+"superficie": [{87599, 32113}], 
+"ptj_superficie": [{17.31, 6.35}], 
+"PIB": [{18906, 29942}]
+}

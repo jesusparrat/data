@@ -1,0 +1,19 @@
+un algoritmo debe: resolver correctamente el problema al cual fue diseñado, ser claro y facil de entender y poder adaptarse a cambios
+
+estructura selectiva en python: if
+
+nombre valido para variable: variable_1
+
+python es un lenguage de: alto nivel, interpretado y de tipado dinámico
+
+controlar el comportamiento de un problema mediante una gestion de excepciones
+
+que funcion tiene una sentencia continue dentro de un bucle while: salta la iteración actual del bucle
+
+anaconda es: una distribucion libre y abierta de python utilizada en ciencia de datos que facilita la administración de paquetes mediante el gestor de paquetes conda
+
+dataframe: un tipo de dato estructurado de dos dimensiones de la biblioteca pandas de Python
+
+with open: porque nos aseguramos de que se cierra el fichero y se liberan sus recusos, incluso en caso de error
+
+

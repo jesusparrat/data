@@ -1,0 +1,111 @@
+============================================================================================
+					PYTHON
+============================================================================================
+
+
+constantes: en MAYUS
+variables: en minus
+
+importancia en eficicacia y eficiencia de codigo
+
+bajo nivel: idioma parecido al lenguaje humano
+
+
+'''
+\' comilla simple
+\" comilla doble
+\n newline
+\r retorno de carro a primer caracter 
+en print (r'') es raw y (f'{var}') quita comas para poner variables c/ {}
+'''
+
+if 1 == x $$$$$$$$$importante para saber si hay errores, cambiar de lado las variables
+
+
+NUNCA SE TRABAJA CON FLOTANTES SI ES DINERO
+
+
+ejemplo:
+opcion = input('introduce una opción: 1, 2 ó 3:\n')
+if '1' == opcion:
+    #TODO hacer algo
+    pass
+elif '2' == opcion:
+    #TODO hacer otra cosa
+    pass
+else:
+    #TODO hacer otra cosa diferente
+    print('guapo')
+
+estructuras iterativas: se repiten, bucles for´
+
+en orden: 
+-
+* / // %
++ - 
+in, not in, <, >, >=, <=, ==, !=
+not
+and
+or
+
+el flujo de control de un programa se puede controlar por una gestion de excepciones
+
+
+funciones: 
+crear funciones () en un .py aparte, y llamarlos con nombre.funcion() o llamandolo .py as n (nombre)
+from .py import * - importa todas las funciones
+
+
+tipos de clases: listas, tupla, conjunto, diccionario
+
+lista.count() - cuenta las ocurrencias de elemento
+lista.index() - primera ocurrencia de un elemento, el primero que se repite
+lista.append() - añadir elemento a la lista
+lista.sort() - ordenar la lista
+lista.reverse() - revertir el orden de la lista
+lista.insert(0, 3) - inserta elemento 3 en la posicion 0
+lista.clear() - vacia la lista  
+
+las tuplas son iguales pero no se pueden asignar elementos
+ejemplo tuplas: días de la semana, meses del año, estaciones del año, letras alfabeto, ...
+
+
+ejercicio_
+preguntar numero de elementos
+para cada elemento: 
+	preguntar valor de elemento
+	añadir el elmento a la lista
+imprimir lista 
+ordenar lista 
+imprimir lista
+
+
+conjuntos: solo almacena elementos sin repetir y sin orden, se pone como: conj = {x1, x2,...}
+no es hasheable, no puede contener conjuntos
+convertir a conjunto: x = set()
+limpieza de duplicados de listas: pasar a conjuntos y a su vez otra vez a lista
+
+
+diccionario: conjuntos clave-valor: {nombre:nombre1}
+
+
+
+
+JUPYTER
+
+formateo de datos: importante para optimizar los programas, intentar reducir el uso de memoria 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
