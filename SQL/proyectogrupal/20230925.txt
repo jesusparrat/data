@@ -1,0 +1,16 @@
+partir en tablas: 
+
+customers: 
+crear customerID como pk
+
+
+pedidos: 
+crear orderID como pk
+relación con customers: customerID como fk de esta tabla
+
+pedidos de productos:
+orderID como fk de antes de tabla pedidos
+
+
+
+

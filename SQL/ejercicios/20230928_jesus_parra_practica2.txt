@@ -1,0 +1,104 @@
+11.1
+SELECT count(movie_title) as cuantas_pelis,
+count(case when duration < 60 then movie_title end) as 'Menos de 60min',
+count(case when duration < 100 then movie_title end) as 'Entre 60-100min',
+count(case when duration > 100 then movie_title end) as 'Mas de 100min'
+from imdb_movies
+WHERE duration != 'NULL'
+
+11.2
+SELECT gender, count(movie_title) as cuantas_pelis,
+count(case when duration < 60 then gender end) as 'Menos de 60min'
+from imdb_movies
+WHERE duration != 'NULL'
+AND gender like '%Action%'
+group by gender like '%Action%'
+
+	cuales duran menos de 60 min:
+SELECT movie_title 
+from imdb_movies
+WHERE duration < 60
+AND gender like '%Action%'
+where date like '2018%'
+
+11.3
+SELECT 
+STRFTIME('%d', date) as dia, 
+STRFTIME('%m', date) as mes, 
+STRFTIME('%Y', date) as año,
+min(high) as minimo_high, 
+round((open+high+low+close)/4,0) media_diaria_high
+from bitcoin_daily_rates_formatdate
+
+11.4
+SELECT movie_title as peli_mas_vista_x_genero,
+CASE 
+	when gender like 'Action%' then 'Action'
+    when gender like 'Crime%' then 'Crime'
+    when gender like 'Comedy%' then 'Comedy'
+    when gender like 'Drama%' then 'Drama'
+    when gender like 'Romance%' then 'Romance'
+end as gender1, 
+count(movie_title) as cuantas_pelis
+
+from imdb_movies
+WHERE gender like 'Action%'
+OR gender like 'Crime%'
+OR gender like 'Comedy%'
+OR gender like 'Drama%'
+or gender like 'Romance%'
+GROUP by 2
+ORDER by max(num_voted_users) desc
+
+11.5
+SELECT homeworld, eye_color,
+COUNT(eye_color) as cuantos_mismo_color_ojos
+from star_wars_characters_2
+where homeworld not in ('unknown', 'NA')
+and eye_color not in ('unknown', 'NA')
+GROUP by homeworld, eye_color
+HAVING cuantos_mismo_color_ojos > 1
+
+11.6
+SELECT actor, director, COUNT(*) as num_peliculas, sum(budget) as presu
+from jamesbond	
+where actor = 'Timothy Dalton'
+and director = 'John Glen'
+
+11.7
+SELECT personal_status, 
+case 
+	WHEN class = 'good' then 'sí'
+    else 'no'
+end as Otorgado, sum(credit_amount) as monto_total
+from LoanData
+group by Otorgado, personal_status
+
+11.8
+SELECT title_year, movie_title, actor_1_me, actor_1_facebook_likes, imdb_score
+FROM imdb_movies
+where gender like 'Action%'
+and actor_1_facebook_likes > 10000
+and title_year < 2013
+and imdb_score >= 8
+
+11.9
+por presupuesto: 
+SELECT movie_title, gender, budget, gross
+from imdb_movies 
+order by budget desc
+limit 20
+
+por beneficio
+SELECT movie_title, gender, budget, gross
+from imdb_movies 
+order by gross desc
+limit 20
+
+con mayor ratio beneficios por presupuesto: 
+SELECT movie_title, gender, gross/budget as beneficios
+from imdb_movies 
+WHERE gross != 'NULL'
+and budget  != 'NULL'
+order by beneficios desc
+limit 20

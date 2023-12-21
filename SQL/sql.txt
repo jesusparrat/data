@@ -1,0 +1,173 @@
+////////////////////////////////////////////////////////////////////////////////////////////
+					SQL
+////////////////////////////////////////////////////////////////////////////////////////////
+
+tipos de datos: str -nombre- (# tlf, código postal, etc), fecha y/u hora, int, booleanos -True/False, 0/1-
+
+bbdd: conjunto de datos almacenados y organizados con el fin de facilitar su acceso y recuperación mediante un equipo informático // serie de datos organizados y relacionados entre sí, los cuales son relacionados y explotados por un software o sistema de información
+
+las BBDD tienen que ser SEGURAS 
+
+las bbdd relacionales están en tablas con datos en columnas y filas
+
+tipos de relaciones: 
+- 1 a varios 1:N, 1:inf. Relación entre tabla A a B 
+- 1:1
+- N:N, de varios a varios, a través de una tercera tabla, no es directa, es indirecta
+
+UNO A VARIOS: 
+Primary key (única - no null, con incremento numérico - puede estar compuesta por varios campos (nombre+primerapellido+segundoapellido por ejemplo)) -> Foreign key (no única, se puede repetir)
+PK -- FK
+1 -> N
+
+
+Para analizar tablas: JOIN, forma de analizar conjuntamente tablas. inner -sólamente los de las 2 tablas en común-, full -todos los datos de las tablas-, left -toda la izquierda + lo que se repite de la derecha-, right -idem al revés-, ...
+
+
+metrica: variable con significado numérico
+dimensiones: normalmente en texto (tlf o código postal son numeros pero txt) que expresa propiedades cualitativas con un rango finito de valores
+
+statements & clauses básicos:
+SELECT: qué columnas serán extraídas de las disponibles de la BBDD
+FROM: de qué tabla disponible de la BBDD
+
+AS: muestra el campo con un ALIAS
+DISTINCT: contenido único DENTRO de un campo - SELECT DISTINCT sector FROM fortune
+WHERE: va después del FROM. =, >, <, <=, >=. <>, AND, OR, BETWEEN X AND Y, NOT IN (X,Y,Z), LIKE 
+ejemplo: SELECT company AS company, sector as sector, employees as empleados, revenue as ingresos FROM fortune WHERE employees > 100000 AND sector in ('Media', 'Technology', 'Retailing')
+ORDER BY (en este orden, después del where, antes de LIMIT): ordena según se indique 
+LIMIT: limita el clause de resultados, hace un rango, SIEMPRE AL FINAL
+CASE WHEN: se crean campos específicos, tantos como queramos, ANTES de FROM
+
+por orden: 
+SELECT DISTINCT
+CASE WHEN
+FROM 
+WHERE AND OR
+ORDER BY
+LIMIT
+
+
+LIKE: campo LIKE 'A%' -que empiece por A- / campo LIKE '%B' -que acabe en B- / campo LIKE '%m%' -que contenga m-
+NOT: añadido a like: campo NOT LIKE 'A%' -que NO empiece por A- / campo NOT LIKE '%B' -que NO acabe en B- / campo NOT LIKE '%m%' -que NO contenga m-
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+					SQL
+////////////////////////////////////////////////////////////////////////////////////////////
+
+AGREGACIONES: 
+ES NECESARIO UTILIZAR GROUP BY y el sector para que salgan los valores agregados en cada valor 
+COUNT(*) - cuenta todos los registros de la columna
+COUNT(campo) - cuenta todos los datos de la columna, sin contar los nulos o vacios
+
+GROUP BY ---- PALABRA CLAVE """SEGÚN"""
+
+ejemplo: SELECT sector, round(avg(revenue),2) as media_ingresos FROM fortune
+GROUP by sector
+order by media_ingresos DESC
+
+ejemplo
+SELECT sector, COUNT(company) num_empresas,
+			sum(employees) as num_empleados,
+            avg(profits) as media_beneficios
+FROM fortune
+--where sector != 'Energy'
+GROUP by sector
+HAVING num_empresas > 60 AND sector != 'Energy'
+ORDER by num_empresas
+
+
+	CUANDO SE QUIERE FILTRAR POR UN RESULTADO NO SE PUEDE USAR WHERE - SOLO SE PUEDE USAR HAVING DESPUÉS DE GROUP BY
+
+ejemplo: 
+SELECT country, COUNT(*) as cuantas_pelis
+FROM imdb_movies
+WHERE color != 'Black and White'
+GROUP by country
+--HAVING cuantas_pelis > 10
+ORDER by cuantas_pelis DESC
+
+
+FEHCAS EN SQL
+STRFTIME(): cambia o extrae de la fecha y lo traduce a texto
+%d dia del mes: 00
+%f hora 
+%H
+%j
+%J
+%m
+%M
+%s
+%S
+%w
+%W
+%Y
+
+
+EXTRACT(): extrae y lo pasa a texto pero NO EN SQLite
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+					SQL
+////////////////////////////////////////////////////////////////////////////////////////////
+
+SUBQUERYS: 
+no se guardan, son temporales
+WITH TABLA as (SELECT * FROM bbdd) SELECT * FROM TABLA
+
+
+UNIONS:
+combina dos tablas de forma VERTICAL, uniendo  filas
+dos tipos de uniones: 
+- UNION ALL: incluye todas las filas incluso si son replicadas
+- UNION: no coge las repes
+
+ejemplo: 
+SELECT * from  tabla1
+	UNION  
+SELECT * from tabla2    
+
+
+JOINS: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
