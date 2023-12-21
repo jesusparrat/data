@@ -1,0 +1,24 @@
+============================================================================================
+					PYTHON - 2 
+============================================================================================
+
+
+Data Science: pasos que SE REPITEN SIEMPRE
+1. Inicializar el modelo: 
+guardar el modelo en una variable:
+variable = Modelo()
+
+2. Entrenar el modelo: aquí aprenderá de los datos que le pasamos para que nos dé una predicción
+variable.fit(dataFrame)
+
+3. Predecir el futuro
+variable.predict(fecha-futuro)
+
+
+
+
+
+
+
+
+
